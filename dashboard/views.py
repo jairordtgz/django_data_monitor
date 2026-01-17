@@ -3,7 +3,9 @@ from django.http import HttpResponse
 
 import requests
 from django.conf import settings
+from django.contrib.auth.decorators import login_required
 
+@login_required
 def index(request):
     # return HttpResponse("¡Bienvenido a la aplicación Django!")
 
