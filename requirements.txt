@@ -17,7 +17,7 @@ comm==0.2.3
 debugpy==1.8.17
 decorator==5.2.1
 defusedxml==0.7.1
-Django==6.0.1
+Django==5.0.6
 executing==2.2.1
 fastjsonschema==2.21.2
 fqdn==1.5.1
@@ -103,3 +103,4 @@ webcolors==25.10.0
 webencodings==0.5.1
 websocket-client==1.9.0
 whitenoise==6.11.0
+mysqlclient==0.0.0
