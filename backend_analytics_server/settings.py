@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-wr0w-on@kii32#!j(ot6b7sj)r1%4=rmi%bgfcy38(d+*d%^6z"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["djangodatamonitor-production-fa4f.up.railway.app"]
 
@@ -134,6 +134,7 @@ CSRF_TRUSTED_ORIGINS = [
   "http://127.0.0.1:8000"
 ]
 
+ALLOWED_HOSTS = ["*"]
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
