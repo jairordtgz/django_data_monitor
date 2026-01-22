@@ -35,7 +35,6 @@ ALLOWED_HOSTS = ['localhost',
     '.up.railway.app',
     '.app.github.dev']
 
-
 # Application definition
 BASE_DIR = Path(__file__).resolve().parent.parent
 
