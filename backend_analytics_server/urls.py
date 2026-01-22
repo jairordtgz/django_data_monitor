@@ -18,8 +18,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
+from django.http import HttpResponse
+
+def health(request):
+    return HttpResponse("ok")
 
 urlpatterns = [
+    path("health/", health),
    path("admin/", admin.site.urls),
    path("dashboard/", include("dashboard.urls")),
     # Ruta login/ para la vista LoginView para inicio de sesión, uso de plantilla y alias
