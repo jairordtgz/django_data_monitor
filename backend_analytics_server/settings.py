@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -133,9 +133,6 @@ CSRF_TRUSTED_ORIGINS = [
   "http://127.0.0.1:8000"
 ]
 
-ALLOWED_HOSTS = [
-  "*",
-]
 
 # Fallo: acceso sin autenticación
 LOGIN_URL = '/login/'
