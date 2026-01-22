@@ -132,7 +132,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 API_URL = 'https://jsonplaceholder.typicode.com/posts'
 
 CSRF_TRUSTED_ORIGINS = [
-  
+  "https://djangodatamonitor-production-fa4f.up.railway.app"
   "https://*.app.github.dev", # Solo si utiliza Codespaces
   "https://localhost:8000",
   "http://127.0.0.1:8000"
@@ -141,6 +141,11 @@ CSRF_TRUSTED_ORIGINS = [
 ALLOWED_HOSTS = [
   "*",
 ]
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
 # Fallo: acceso sin autenticación
 LOGIN_URL = '/login/'
