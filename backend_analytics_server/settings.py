@@ -137,8 +137,10 @@ CSRF_TRUSTED_ORIGINS = [
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-CSRF_COOKIE_SECURE = True
-SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = False
+
+SESSION_ENGINE = "django.contrib.sessions.backends.db"
 
 # Fallo: acceso sin autenticación
 LOGIN_URL = '/login/'
